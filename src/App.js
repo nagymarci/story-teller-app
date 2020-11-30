@@ -11,7 +11,7 @@ function App() {
   return (
     <Container className="App">
       <Row className="mt-1">
-        <Button onClick={handleClick}>New Game</Button>
+        <Button onClick={handleClick}>Új mese</Button>
       </Row>
       <Row className="mt-5">
       <StoryTeller />

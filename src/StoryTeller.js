@@ -7,7 +7,7 @@ export const StoryTeller = () => {
   
   useEffect(() => {
     if (isLoading && gameState == null) {
-      fetch("http://localhost:4400/story", {
+      fetch(window.apiUrl, {
         method: "post"
       }).then((res) => Promise.all([res.status, res.json()]))
       .then(([status, result]) => {
