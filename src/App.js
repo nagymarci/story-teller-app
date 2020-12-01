@@ -1,7 +1,7 @@
 import './App.css';
-import React, { useState } from 'react';
+import React from 'react';
 import { StoryTeller } from './StoryTeller';
-import { Container, Row, Button } from 'react-bootstrap';
+import { Container, Row} from 'react-bootstrap';
 
 function App() {
 

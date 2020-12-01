@@ -48,7 +48,7 @@ export const StoryTeller = () => {
         <tr>
         {gameState.emojis.map((emoji) => {
           return (
-            <td key={emoji.id}>
+            <td key={emoji.id} style={{fontSize: 50}}>
               {emoji.symbol}
               </td>
           )
@@ -57,6 +57,22 @@ export const StoryTeller = () => {
         </tbody>
         </Table>
       </Row> }
+      <Row>
+        <h2>A te meséd:</h2>
+        <Table>
+          <tbody>
+            <tr>
+            {gameId !== "" && gameState.story.map((symbol) => {
+              return (
+                <td key={symbol} style={{fontSize: 50}}>
+                  {symbol}
+                  </td>
+              )
+            })}
+            </tr>
+          </tbody>
+        </Table>
+      </Row>
     </Container>
   )
 }
