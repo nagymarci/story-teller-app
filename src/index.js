@@ -3,6 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ReactGA from "react-ga";
+
+if (window.tracking) {
+  ReactGA.initialize(window.tracking)
+  ReactGA.pageview(window.location.pathname + window.location.search)
+}
 
 ReactDOM.render(
   <React.StrictMode>
