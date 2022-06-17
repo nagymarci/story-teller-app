@@ -4,7 +4,7 @@ frontend:
     preBuild:
       commands:
         - npm ci
-        - npm run aws-build
+        - npm run generate-config
     build:
       commands:
         - npm run build
