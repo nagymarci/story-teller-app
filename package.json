@@ -16,6 +16,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "aws-build": "scripts/aws-generate-config.sh",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
