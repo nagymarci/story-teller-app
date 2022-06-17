@@ -16,7 +16,7 @@ window.tracking = "$GA_TRACKING"
 In a docker environment the file is created by the [scripts/30-config.sh](https://github.com/nagymarci/story-teller-app/blob/81b574ac70653bee168ca97ac30683925710af33/scripts/30-config.sh)
 script. When the docker container is started, the environment variables needs to be set.
 
-### AWS Amplify hosting
+### AWS Amplify
 Set the environment variables in the Amplify Console, and use the amplify.yml to build the app. The config.js with the proper content will be generated into the `public` folder.
 
 ## Available Scripts
