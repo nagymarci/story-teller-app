@@ -1,6 +1,20 @@
-# Getting Started with Create React App
+# Story-teller app
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Configuration
+The app expect configuration available in variables defined in `config.js`. This file is referenced from `index.html`
+to be available globally. 
+Format:
+```
+window.apiUrl = "$API_URL"
+window.wsUrl = "$WS_URL"
+window.tracking = "$GA_TRACKING"
+```
+
+### Docker
+In a docker environment the file is created by the [scripts/30-config.sh](https://github.com/nagymarci/story-teller-app/blob/81b574ac70653bee168ca97ac30683925710af33/scripts/30-config.sh)
+script. When the docker container is started, the environment variables needs to be set.
 
 ## Available Scripts
 
